@@ -1,0 +1,14 @@
+{
+  "name": "js-plugin-by-systemjs",
+  "version": "1.0.0",
+  "description": "mini plugin system by systemjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RiverRay",
+  "license": "ISC",
+  "dependencies": {
+    "systemjs": "^6.14.3"
+  }
+}

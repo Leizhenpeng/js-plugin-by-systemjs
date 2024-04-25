@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plugin System with SystemJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
+    <script type="systemjs-importmap">
+        {
+          "imports": {
+            "plugin-hello": "./plugins/hello.js",
+            "plugin-goodbye": "./plugins/goodbye.js"
+          }
+        }
+      </script>
+        <!-- load a locally hosted module -->
+  <!-- <script type="systemjs-module" src="import:plugin-hello"></script> -->
+  <!-- <script type="systemjs-module" src="import:plugin-goodbye"></script> -->
+</head>
+<body>
+    <h1>Plugin System with SystemJS</h1>
+    <button id="loadHello">Load Hello Plugin</button>
+    <button id="loadGoodbye">Load Goodbye Plugin</button>
+    <script src="app.js"></script>
+</body>
+</html>

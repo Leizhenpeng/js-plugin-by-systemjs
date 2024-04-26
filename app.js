@@ -1,12 +1,11 @@
-System.import('plugin-hello').then(module => {
-    document.getElementById('loadHello').addEventListener('click', () => {
+document.getElementById('loadHello').addEventListener('click', () => {
+    System.import('plugin-hello').then(module => {
       module.greet();
     });
   });
   
-  System.import('plugin-goodbye').then(module => {
-    document.getElementById('loadGoodbye').addEventListener('click', () => {
+  document.getElementById('loadGoodbye').addEventListener('click', () => {
+    System.import('plugin-goodbye').then(module => {
       module.farewell();
     });
   });
-  

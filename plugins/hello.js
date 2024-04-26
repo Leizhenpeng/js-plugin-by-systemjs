@@ -1,8 +1,12 @@
+
+
+
+
 System.register([], function (_export, _context) {
     return {
         execute: function () {
             _export('greet', function farewell() {
-                console.log('Hello from the Hello plugin!');
+                document.querySelector('h1').textContent = 'Greet from Hello World';
             });
         }
     };

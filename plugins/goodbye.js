@@ -3,7 +3,7 @@
       execute: function() {
 
         _export('farewell', function farewell() {
-          console.log('Goodbye from the Goodbye plugin!');
+        document.querySelector('h1').textContent = 'Goodbye ~';
         });
       }
     };
